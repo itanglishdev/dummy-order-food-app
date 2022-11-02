@@ -12,7 +12,13 @@ const price = `$${props.price.toFixed(2)}`
                 <div className={classes.price}>{price}</div>
             </div>
             <div>
-                <MealItemForm/>
+                <MealItemForm
+                     id={props.id} // this is new!
+                     key={props.id}
+                     name={props.name}
+                     description={props.description}
+                     price={props.price}
+                />
             </div>
         </li>
      );
